@@ -5,6 +5,7 @@ Just using Front-end fundamentals
 -JavaScript
 -DOM manipulation
 -Modules
+-DataSet
 - Mapeamento de rotas;
 - Assíncrono e promises;
 - Orientação a objetos;
