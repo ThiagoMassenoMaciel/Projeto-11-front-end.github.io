@@ -5,6 +5,7 @@ Just tested in live-server VS-CODE
 ## ![giff](https://github.com/ThiagoMassenoMaciel/Projeto-11-front-end.github.io/blob/main/SPA-UNIVERSE-P11-_vid.mp4_.gif)
 
 # tested after posted on githubPages
+aqui
 ## ![after_deploy](https://github.com/ThiagoMassenoMaciel/Projeto-11-front-end.github.io/blob/main/SPA__After_Deploy_No_GitHub_Pages.mp4)
 
 # full-project-end - Tested jus on the VS-code 
