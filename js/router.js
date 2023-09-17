@@ -21,10 +21,10 @@ export class Router{
     console.log(`\n event.target.dataset.changeback :  ${swap} \n`)
     console.log(`\n event.target.dataset.changeback :  ${B.change[swap]} \n`)
 
-    const SWAP = event.target.dataset.bold
+    let SWAP = event.target.dataset.bold
 
     console.log(`\n event.target.dataset.bold :  ${SWAP} \n`)
-    console.log(`\n event.target.dataset.bold :  ${L.change[SWAP]} \n`)
+    console.log(`\n event.target.dataset.bold :  ${L.Bolding[SWAP]} \n`)
 
     B.change.run(swap);
     L.Bolding.run(SWAP);

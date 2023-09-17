@@ -1,6 +1,6 @@
-const link1 = document.getElementById('#link1')
-const link2 = document.getElementById('#link2')
-const link3 = document.getElementById('#link3')
+const link1 = document.getElementById('link1')
+const link2 = document.getElementById('link2')
+const link3 = document.getElementById('link3')
 
 export const Bolding = {
 
@@ -42,3 +42,13 @@ export const Bolding = {
 // This class MAYBE  in order to write again the methods and data0sets why i not using the data-set that already exist ? 
 // Because i am building this aplication with growth
 // mais manutenível
+
+
+/*
+Ancora = const link
+evento = metodos(){       add classe com alterações         }
+*/
+//Ancora : tag link 
+//evento : font-weight: 700 
+//         e 
+//         font-size :  2.4rem
