@@ -26,14 +26,16 @@ Version 2.0
   
   Porque esta tentativa de criar o file linkClicked.js não deu certo ? 
     erro 1 : router.js  
-      console.log(`\n event.target.dataset.bold :${L.MetodoQueExecutaValorDataSet[SWAP]} \n`)
+      console.log(`\n event.target.dataset.bold :${L.MetodoQueExecutaValorDataSet[SWAP]} 
+      \n`)
     erro 2 :  linkClicked.js 
       const link3 = document.getElementById('#link3')
 
-Version 3.0 
+Version 3.0
+
   change image 
   focus link clicked 
-
+  onpopstate and change img , link at the same time i try not win  
   
 Uncaught TypeError: Cannot read properties of undefined (reading 'preventDefault')
     at Router.route (router.js:11:7)

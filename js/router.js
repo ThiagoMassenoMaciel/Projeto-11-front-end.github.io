@@ -3,6 +3,8 @@ import * as L from './linkClicked.js'
 
 export class Router{
   routes = { }
+  swap= ""
+  SWAP = ""
 
   add(NameRoute, GoPath){
     this.routes[NameRoute] = GoPath
@@ -16,37 +18,60 @@ export class Router{
 
     window.history.pushState({}, "" , event.target.href)
 
-    const swap = event.target.dataset.changeback
+    this.swap = event.target.dataset.changeback
     
-    console.log(`\n event.target.dataset.changeback :  ${swap} \n`)
-    console.log(`\n event.target.dataset.changeback :  ${B.change[swap]} \n`)
+    console.log(`\n event.target.dataset.changeback :  ${this.swap} \n`)
+    console.log(`\n event.target.dataset.changeback :  ${B.change[this.swap]} \n`)
 
-    let SWAP = event.target.dataset.bold
+    this.SWAP = event.target.dataset.bold
 
-    console.log(`\n event.target.dataset.bold :  ${SWAP} \n`)
-    console.log(`\n event.target.dataset.bold :  ${L.Bolding[SWAP]} \n`)
+    console.log(`\n event.target.dataset.bold :  ${this.SWAP} \n`)
+    console.log(`\n event.target.dataset.bold :  ${L.Bolding[this.SWAP]} \n`)
 
-    B.change.run(swap);
-    L.Bolding.run(SWAP);
+    this.goToAnotherLink(this.swap, this.SWAP)
 
     this.handle()
   }
 
+  goToAnotherLink( swap,SWAP){
+    B.change.run(swap);
+    L.Bolding.run(SWAP);
+  }
+
   handle(){
+    const outBold = document.querySelectorAll('a')
+
     const ancora = document.querySelector('section')
+//    const ul = document.querySelector('ul')
 
-    const {pathname} = window.location
+    const {pathname} = window.location  
+    //pegar aquele link a de acordo com seu SPA
+    /*
+    
+    ul.addEventListener("click" , (e)=>{ 
+      console.log(e.target.dataset.bold)
+      
+      L.Bolding.run(e.target.dataset.bold)
+     })
 
+    */
     console.log(`apelido do caminho à ser direcionado : ${pathname}`)
 
     const GoToPath = this.routes[pathname] || this.routes["/error"]
 
     console.log(GoToPath)
 
+    this.goToAnotherLink(this.swap, this.SWAP)
+
     fetch(GoToPath)
     .then( data => data.text()                 )
     .then( html => ancora.innerHTML = html     )
 
+    window.addEventListener("popstate", () => outBold.classList.remove('bold'))
+
+    function out_bold(){
+     
+    }
   }
 
 }
