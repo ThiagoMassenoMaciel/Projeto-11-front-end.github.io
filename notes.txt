@@ -12,6 +12,8 @@ Just using Front-end fundamentals
 - Switch Case ;
 - Object literals ;
 
+Trocando o fundo 
+Faltou trocar o bold da letra handle
 
 
 
