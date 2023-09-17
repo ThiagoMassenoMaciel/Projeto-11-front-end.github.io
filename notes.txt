@@ -16,7 +16,8 @@ Trocando o fundo
 Faltou trocar o bold da letra handle
 
 Version 1.0
-  Just change the image background 
+  Just change the image background
+  Porque n troca tambem os pedaço SPA  da aplicação
 
 Version 2.0
   Just change the image background 
