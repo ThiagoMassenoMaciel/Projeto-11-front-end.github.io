@@ -12,7 +12,14 @@ Just using Front-end fundamentals
 - Object literals ;
 
 
+Version 1.0
+  Just change the image background 
 
+Version 2.0
+  Just change the image background 
+  Try change the text from link clicked 
+  
+  Porque esta tentativa de criar o file linkClicked.js não deu certo ? 
 
 
 Uncaught TypeError: Cannot read properties of undefined (reading 'preventDefault')

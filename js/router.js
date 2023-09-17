@@ -1,4 +1,5 @@
 import * as B from './background.js'
+import * as L from './linkClicked.js'
 
 export class Router{
   routes = { }
@@ -16,10 +17,17 @@ export class Router{
     window.history.pushState({}, "" , event.target.href)
 
     const swap = event.target.dataset.changeback
+    
     console.log(`\n event.target.dataset.changeback :  ${swap} \n`)
     console.log(`\n event.target.dataset.changeback :  ${B.change[swap]} \n`)
 
+    const SWAP = event.target.dataset.bold
+
+    console.log(`\n event.target.dataset.bold :  ${SWAP} \n`)
+    console.log(`\n event.target.dataset.bold :  ${L.change[SWAP]} \n`)
+
     B.change.run(swap);
+    L.Bolding.run(SWAP);
 
     this.handle()
   }
