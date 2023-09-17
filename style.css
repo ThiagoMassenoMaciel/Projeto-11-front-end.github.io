@@ -73,7 +73,7 @@ nav{
 ul{
   display: flex;
   gap: 3.2rem;
-
+  flex-direction: row;
   text-align: center;
   
   align-items: center;
