@@ -6,7 +6,7 @@ Just tested in live-server VS-CODE
 
 # tested after posted on githubPages
 aqui
-## ![after_deploy](https://github.com/ThiagoMassenoMaciel/Projeto-11-front-end.github.io/blob/main/SPA__After_Deploy_No_GitHub_Pages.mp4)
+## ![after_deploy]( https://github.com/ThiagoMassenoMaciel/Projeto-11-front-end.github.io/blob/main/gif_After_Deploy_GitHub_Pages.gif)
 
 # full-project-end - Tested jus on the VS-code 
 ## <video width="320" height="240" controls>  <source src="[i](https://github.com/ThiagoMassenoMaciel/Projeto-11-front-end.github.io/blob/main/full-PROJETO-11-FRONT-END-SPA%20(online-video-cutter.com).mp4)" type="video/mp4">   </video>
