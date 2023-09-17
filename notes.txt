@@ -5,12 +5,15 @@ Just using Front-end fundamentals
 -JavaScript
 -DOM manipulation
 -Modules
+-DataSet
 - Mapeamento de rotas;
 - Assíncrono e promises;
 - Orientação a objetos;
 - Switch Case ;
 - Object literals ;
 
+Trocando o fundo 
+Faltou trocar o bold da letra handle
 
 Version 1.0
   Just change the image background 
