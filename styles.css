@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  background-color: #010a0d;
+
+  --color-text-nav: hsla(240, 7%, 78%, 1);
+  --color-text-nav-clicked: hsla(0, 0%, 100%, 1);
+  --color-text-section-title: hsla(240, 9%, 89%, 1);
+  --color-text-button-hover: hsl(194, 97%, 31%);
+  --color-background-button-hover: hsl(0, 0%, 100%);
+
+  --max-width-center: 144rem;
+  --padding-center: 2.8em 2.4rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+
+#root {
+  display: flex;
+  flex: 1;
+}
+
+.page {
+  flex: 1;
+  margin: 0 auto;
+  max-width: var(--max-width-center);
+  padding: var(--padding-center);
+}
+.page.home {
+  display: grid;
+  place-items: center;
+}
+.page.home div {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.center {
+  max-width: var(--max-width-center);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4rem;
+  padding: var(--padding-center);
+  margin-inline: auto;
+}
+.center nav ul {
+  display: flex;
+  gap: 1.6rem;
+}
+.center nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: var(--color-text-nav-clicked);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  font-size: 2.2rem;
+  font-weight: 400;
+
+  color: var(--color-text-nav);
+}
+
+li img {
+  width: 4.2rem;
+  height: 5rem;
+}
+
+button {
+  color: var(--color-text-nav-clicked);
+  background-color: transparent;
+
+  padding: 1.2rem 3.2rem;
+
+  justify-content: center;
+
+  align-items: center;
+  gap: 0.8rem;
+
+  border-radius: 5px;
+  border: 2px solid #fff;
+
+  text-transform: uppercase;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+button:hover {
+  color: var(--color-text-button-hover);
+  background-color: var(--color-background-button-hover);
+}
+
+h1 {
+  color: var(--color-text-section-title);
+
+  font-family: inherit;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 6rem;
+}
+
+p {
+  margin-top: 1.6rem;
+
+  width: 64.8rem;
+  height: 20.3rem;
+
+  color: var(--color-text-section-title);
+
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.88rem;
+}
